@@ -1,0 +1,14 @@
+{
+  "name": "mystellar",
+  "version": "1.0.0",
+  "description": "App for browsing my dso photo",
+  "main": "buildCatalog.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.4.0"
+  }
+}
