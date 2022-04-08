@@ -120,6 +120,6 @@ scanDir(start)
  */
 //console.log("Our catalog is:", catalog)
 let catalogJson = JSON.stringify(catalog);
-fs.writeFileSync("catalog.json",catalogJson);
+fs.writeFileSync(start + "/catalog.json",catalogJson);
 
 
