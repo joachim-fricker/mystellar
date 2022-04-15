@@ -1,4 +1,5 @@
 var express = require('express');
+const cors = require('cors');
 var app = express();
 const yargs = require('yargs');
 
@@ -16,10 +17,12 @@ const argv = yargs.option('directory', {
 console.log('webserver root is: ', argv.directory);
 let start = argv.directory;
 
-
+app.use(cors({
+    origin: '*'
+}));
 // data folder
 app.use(express.static(start)); 
 
 // app folder
 app.use(express.static("./")); 
-var server = app.listen(8080);
+var server = app.listen(8888);
